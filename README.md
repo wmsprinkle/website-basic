@@ -4,13 +4,13 @@ A professional, production-ready corporate website for Sprinkle Industries, LLC.
 
 ## Features
 
-✅ **Responsive Design** – Mobile-first, works on all devices  
-✅ **Fast & Lightweight** – Pure HTML/CSS/JS, no build step required  
-✅ **SEO Optimized** – Structured metadata, sitemap, robots.txt  
-✅ **Accessibility** – WCAG-compliant semantic HTML  
-✅ **Dark Mode Support** – Automatically adapts to system preferences  
-✅ **Professional Footer** – Legal business name, copyright, contact, policy links  
-✅ **Contact Form** – Email integration for inquiries  
+- **Responsive Design** – Mobile-first, works on all devices  
+- **Fast & Lightweight** – Pure HTML/CSS/JS, no build step required  
+- **SEO Optimized** – Structured metadata, sitemap, robots.txt  
+- **Accessibility** – WCAG-compliant semantic HTML  
+- **Dark Mode Support** – Automatically adapts to system preferences  
+- **Professional Footer** – Legal business name, copyright, contact information, policy links  
+- **Contact Form** – Email integration for inquiries  
 
 ## Pages
 
