@@ -27,12 +27,22 @@ document.addEventListener('DOMContentLoaded', function() {
       const data = {
         name: formData.get('name'),
         email: formData.get('email'),
+        phone: formData.get('phone'),
         subject: formData.get('subject'),
-        message: formData.get('message')
+        message: formData.get('message'),
+        smsConsent: formData.get('sms-consent') ? 'Yes' : 'No'
       };
 
       // Compose mailto link
-      const mailtoLink = `mailto:will@sprinkleindustries.net?subject=${encodeURIComponent(data.subject)}&body=${encodeURIComponent(`Name: ${data.name}\nEmail: ${data.email}\n\n${data.message}`)}`;
+      const bodyLines = [
+        `Name: ${data.name}`,
+        `Email: ${data.email}`,
+        `Phone: ${data.phone || 'Not provided'}`,
+        `SMS Opt-In: ${data.smsConsent}`,
+        '',
+        data.message
+      ];
+      const mailtoLink = `mailto:will@sprinkleindustries.net?subject=${encodeURIComponent(data.subject)}&body=${encodeURIComponent(bodyLines.join('\n'))}`;
       window.location.href = mailtoLink;
     });
   }
