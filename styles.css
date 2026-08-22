@@ -88,6 +88,21 @@ nav {
   color: var(--accent);
 }
 
+/* Portal sign-in: set apart from the marketing links, it leaves the site. */
+.nav-links a.nav-portal {
+  padding: 0.4rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.nav-links a.nav-portal:hover {
+  color: var(--white);
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
 .nav-toggle {
   display: none;
   background: none;
@@ -118,6 +133,14 @@ nav {
     padding: 1rem 1.5rem;
     border-bottom: 1px solid var(--border);
     width: 100%;
+  }
+
+  /* Drop the button treatment in the stacked menu; it reads as a row here. */
+  .nav-links a.nav-portal {
+    padding: 1rem 1.5rem;
+    border: none;
+    border-bottom: 1px solid var(--border);
+    border-radius: 0;
   }
 
   .nav-toggle {
